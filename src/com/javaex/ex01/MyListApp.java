@@ -43,12 +43,33 @@ public class MyListApp {
 		////////////////////////////////////////
 		//원 관리
 		////////////////////////////////////////
+		System.out.println("Circle관리============================");
+		
+		//포인트를 관리하는 리스트(배열대용)를 만든다
+		CircleList cList = new CircleList();
+		
+		Circle c00 = new Circle(5);
+		Circle c01 = new Circle(10);
+		Circle c02 = new Circle(15);
+		
+		cList.add(c00);
+		cList.add(c01);
+		cList.add(c02);
+		
+		System.out.println(cList);
+		
+		System.out.println(cList.size());
+		
+		System.out.println(cList.get(1).toString());
+		System.out.println(cList.get(1));
+		System.out.println(cList.get(1).getRadius());
+		System.out.println("---------------------------------");
 		
 		
-		
-		
-		
-		
+		for(int i=0; i<cList.size(); i++ ) {
+			//System.out.println(cList.get(i));
+			System.out.println(cList.get(i).getRadius());
+		}
 		
 		/*
 		//배열사용시

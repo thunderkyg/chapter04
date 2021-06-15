@@ -1,29 +1,39 @@
-package com.javaex.ex01;
+package com.javaex.ex04;
 
 public class Circle {
 	
-	//필드
+	//Field
 	private int radius;
 
-	//생성자
+	
+	//Constructor
 	public Circle() {
+		super();
 	}
 	
 	public Circle(int radius) {
-		this.radius = radius;	}
+		super();
+		this.radius = radius;
+	}
+
 	
-	//메소드 gs
+	//Method - g/s
+	
 	public int getRadius() {
 		return radius;
 	}
-
+	
 	public void setRadius(int radius) {
 		this.radius = radius;
 	}
+
+	//Method - Ordinary
 	
-	//메소드 일반
 	@Override
 	public String toString() {
 		return "Circle [radius=" + radius + "]";
 	}
+	
+	
+
 }
